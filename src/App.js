@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <div className="bg-primary text-green-100">
+    <div>
       <Header></Header>
     </div>
   );
