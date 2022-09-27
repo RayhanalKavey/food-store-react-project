@@ -2,8 +2,8 @@ import React from "react";
 import "./Header.css";
 const Header = () => {
   return (
-    <div>
-      <div className="navbar bg-base-100 shadow-lg sticky ">
+    <div className="sticky top-0 z-50">
+      <div className="navbar bg-base-100 shadow-lg ">
         <div className="flex-1 ">
           <a href="/" className="btn btn-ghost normal-case text-xl">
             daisyUI
@@ -33,7 +33,7 @@ const Header = () => {
             </label>
             <div
               tabIndex={0}
-              className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow"
+              className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow z-10"
             >
               <div className="card-body">
                 <span className="font-bold text-lg">8 Items</span>

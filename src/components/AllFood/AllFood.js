@@ -14,10 +14,10 @@ const AllFood = () => {
   // }
   return (
     <div>
-      <h1 className="text-5xl text-center my-5">
+      <h1 className="text-5xl text-center my-5 ">
         Foods from different country
       </h1>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 justify-center justify-items-center		">
+      <div className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 justify-center justify-items-center	m-8	">
         {foods.map((food) => (
           <Food food={food} key={food.idMeal}></Food>
         ))}

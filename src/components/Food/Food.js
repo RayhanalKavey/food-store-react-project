@@ -12,10 +12,11 @@ const Food = ({ food }) => {
     strSource,
     strYoutube,
   } = food;
+  // md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3
   return (
-    <div className="card w-72 bg-base-100 shadow-xl ">
+    <div className="card w-full  xl:w-80 bg-base-100 shadow-xl ">
       <figure>
-        <img className="w-80 h-52" src={strMealThumb} alt="Shoes" />
+        <img className="xl:w-80 xl:h-52" src={strMealThumb} alt="Shoes" />
       </figure>
       <div className="card-body">
         <h2 className="card-title uppercase font-bold text-2xl">{strMeal}</h2>
@@ -26,9 +27,9 @@ const Food = ({ food }) => {
         <p>
           <span className="uppercase font-bold">Food Area:</span> {strArea}
         </p>
-        <div className="flex justify-between">
-          <button className="btn btn-primary">Add to cart</button>
-          <button className="btn btn-primary">Details</button>
+        <div className="flex gap-2">
+          <button className="w-2/3 btn btn-primary">Add to cart</button>
+          <button className="w-1/3 btn btn-primary">Details</button>
         </div>
       </div>
     </div>
