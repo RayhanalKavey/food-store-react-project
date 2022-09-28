@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-const Header = () => {
+const Header = ({ handleSearch }) => {
   return (
     <div className="sticky top-0 z-50">
       <div className="navbar bg-base-100 shadow-lg ">
@@ -52,6 +52,7 @@ const Header = () => {
               type="text"
               placeholder="Search"
               className="input input-bordered"
+              onChange={(e) => handleSearch(e)}
             />
           </div>
           {/* Form enD*/}

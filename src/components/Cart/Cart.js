@@ -1,11 +1,13 @@
-import React from "react";
-import "./Cart.css";
-const Cart = () => {
-  return (
-    <div className="sticky top-[66px] border h-screen">
-      <h1>Selected Food</h1>
-    </div>
-  );
-};
+// import React from "react";
 
-export default Cart;
+// const Cart = ({ food }) => {
+//   // console.log(food);
+//   console.log(food);
+//   return (
+//     <div>
+//       <div className="sticky top-[66px] border h-screen"></div>
+//     </div>
+//   );
+// };
+
+// export default Cart;
